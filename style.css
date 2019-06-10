@@ -1,0 +1,245 @@
+rozkład{
+    font-family: Arial;
+    background-color: #e3e3e3;
+    width: 100%;
+}
+
+nagłówek{
+    background-color: #1d69d2;
+    width: 100%;
+    display: flex;
+    color: white;
+    justify-items: center;
+    flex-flow: column wrap;
+    border-bottom: 2px solid #0b2a54;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+tytuł{
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    font-family: Lato, Courier New;
+    background-image: url("icon/logo.png");
+    background-repeat: no-repeat;
+    background-position:  center 55px ;
+    height: 250px;
+
+}
+
+
+autor{
+  font-size: 1.5em;
+    background-color: #1754a8;
+    width: 35%;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+nr_indeksu{
+    font-size: 0.5em;
+}
+
+nr_indeksu:before{
+    content: "numer indeksu: ";
+}
+data_modyfikacji{
+    padding-left: 15px;
+}
+data_modyfikacji:before{
+    content: "Data modyfikacji: ";
+}
+
+przyjazdy{
+    display: flex;
+    flex-flow: column wrap;
+    width: 80%;
+    background-color: #efefef;
+    margin: 25px auto;
+    border-radius: 5px;
+    min-height: 60vh;
+    align-items: center;
+}
+
+pociąg { grid-area: pociąg;
+margin-left: 28px;
+font-size: 2em;
+    color: #676767;
+}
+
+wyjazd { grid-area: wyjazd; }
+
+przyjazd { grid-area: przyjazd; }
+
+
+informacje{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-end;
+    align-content: flex-start;
+    grid-area: informacje;
+}
+informacje > *{
+   width: 100%;
+
+}
+
+cena {
+
+    font-size: 1.5em;
+    color: #db7520;
+    font-weight: bold;
+    text-align: right;
+    margin-right: 32px;
+}
+
+cena[promocja=tak] {
+    color: green;
+}
+
+cena::after{
+    content: "zł";
+    font-size: .7em;
+}
+cena::before{
+    content: attr(typ) " cena: ";
+    font-size: .7em;
+    color: black;
+    font-weight: lighter;
+}
+
+dystans{
+    color: #575757;
+    font-weight: bold;
+}
+dystans:before{
+    content: "łączny dystans: ";
+    font-weight: normal;
+
+    display: inline-block;
+}
+dystans:after{
+    font-weight: bold;
+    content: "km";
+}
+połączenie::before{
+    grid-area: pociąg;
+}
+
+połączenie{
+    background: #fff;
+    border-radius: 2px;
+    /*display: flex;*/
+    /*flex-flow: column wrap;*/
+
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 1fr .2fr .2fr;
+    grid-template-areas: "pociąg stacje " "wyjazd informacje " " przyjazd informacje";
+    column-gap: 2rem;
+    height: 300px;
+    margin: 1rem auto;
+
+    width: 80%;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    padding: 5px;
+    line-height: 30px;
+}
+połączenie:hover{
+    box-shadow: 0 2px 3px rgba(0,0,0,0.35), 0 1px 2px rgba(0,0,0,0.35);
+}
+
+połączenie[przewoźnik="TLK"]::before{
+    background-image: url("icon/tlk.gif");
+    content: "";
+    width: 28px;
+    height: 30px;
+}
+
+połączenie[przewoźnik="IC"]::before{
+    background-image: url("icon/IC.gif");
+    content: "";
+    width: 28px;
+    height: 30px;
+}
+
+połączenie[przewoźnik="EIP"]::before{
+    background-image: url("icon/EIP.gif");
+    content: "";
+    width: 28px;
+    height: 30px;
+}
+
+połączenie[przewoźnik="REG"]::before{
+    background-image: url("icon/REG.gif");
+    content: "";
+    width: 28px;
+    height: 30px;
+}
+
+wyjazd, przyjazd{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+godzina{
+    font-size: 1.5em;
+    color: #0b2a54;
+    font-weight: bold;
+    order: 1;
+}
+
+opóżnienie{
+    font-size: 1.5em;
+    color: red;
+    font-weight: bold;
+    order: 2;
+}
+opóżnienie + godzina{
+    color: gray;
+    font-size: 1.2em;
+    text-decoration: line-through;
+}
+
+opóżnienie + godzina:before{
+    content: "opóźniony ";
+    font-size: .7em;
+    text-decoration: none;
+    color: black;
+    display:inline-block;
+    margin-right: 10px;
+
+}
+
+stacja{
+    order: 0;
+}
+
+
+
+stacje::before{
+    content: "Stacje: ";
+    color: black;
+    font-weight: bold;
+}
+stacje{
+    color: #676767;
+}
+stacje > stacja{
+    display: list-item;
+    list-style: decimal;
+    margin-left: 90px;
+
+}
+
+credits > *{
+    display: list-item;
+    font-size: .5em;
+    font-style: italic;
+    margin-left: 15px;
+    list-style: none;
+}

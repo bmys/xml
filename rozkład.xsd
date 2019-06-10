@@ -1,0 +1,199 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="www.pkp.pl" elementFormDefault="qualified" xmlns="www.pkp.pl">
+    <xs:element name="rozkład">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="nagłówek">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element type="xs:string" name="tytuł"/>
+
+                            <xs:element name="autorzy">
+                                <xs:complexType>
+                                    <xs:sequence maxOccurs="2">
+                                        <xs:element type="autorType" name="autor"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+
+                            <xs:element type="xs:date" name="data_modyfikacji"/>
+
+                            <xs:element name="credits">
+                                <xs:complexType>
+                                    <xs:sequence maxOccurs="unbounded">
+                                        <xs:element type="creditType" name="credit"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="połączenia">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="przewoźnicy" type="przewoźnicyType"/>
+                            <xs:element name="przyjazdy" type="przyjazdyType"/>
+                        </xs:sequence>
+                    </xs:complexType>
+
+                    <xs:key name="myId">
+                        <xs:selector xpath="./przewoźnicy/przewoźnik"/>
+                        <xs:field xpath="@id"/>
+                    </xs:key>
+
+                    <xs:keyref name="myIdref" refer="myId">
+                        <xs:selector xpath="./przyjazdy/połączenie"/>
+                        <xs:field xpath="@idref"/>
+                    </xs:keyref>
+                </xs:element>
+
+            </xs:sequence>
+        </xs:complexType>
+
+
+
+    </xs:element>
+
+    <xs:complexType name="autorType">
+        <xs:sequence>
+            <xs:element name="imie">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:pattern value="[A-Z][a-z]*"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="nazwisko" type="xs:string"/>
+            <xs:choice>
+                <xs:element name="nr_indeksu">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:positiveInteger">
+                            <xs:totalDigits value="6" fixed="true" />
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+
+                <xs:element name="email">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:pattern value="[^@]+@[^\.]+\..+"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+            </xs:choice>
+
+
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="creditType">
+        <xs:sequence>
+            <xs:element name="nazwa" type="xs:string"/>
+            <xs:element name="źródło" type="xs:anyURI"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="przewoźnicyType">
+        <xs:sequence minOccurs="1">
+            <xs:element name="przewoźnik" minOccurs="1" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:attribute name="id" type="xs:string" use="required"/>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="przyjazdyType">
+        <xs:sequence minOccurs="1">
+            <xs:element name="połączenie" minOccurs="1" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence minOccurs="1">
+                        <xs:element name="pociąg" type="xs:string"/>
+                        <xs:element name="wyjazd">
+                            <xs:complexType>
+                                <xs:group ref="stacja_godzina"></xs:group>
+                            </xs:complexType>
+                        </xs:element>
+
+                        <xs:element name="przyjazd">
+                            <xs:complexType>
+                                <xs:group ref="stacja_godzina"></xs:group>
+                                <xs:attribute name="opóźnienie" type="xs:time" use="optional"/>
+                            </xs:complexType>
+                        </xs:element>
+
+                        <xs:element name="stacje">
+                            <xs:complexType>
+                                <xs:sequence minOccurs="2" maxOccurs="unbounded">
+                                    <xs:element name="stacja" type="stacjaType">
+
+                                    </xs:element>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+
+                        <xs:element name="informacje">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="dystans">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:pattern value="[0-9]+km"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:element>
+
+                                    <xs:element name="cena" maxOccurs="unbounded">
+                                        <xs:complexType>
+                                            <xs:simpleContent>
+                                                <xs:extension base="xs:float">
+                                                    <xs:attributeGroup ref="cenaAttr"/>
+                                                </xs:extension>
+                                            </xs:simpleContent>
+                                        </xs:complexType>
+                                    </xs:element>
+
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                    <xs:attribute name="idref" type="xs:string" use="required"/>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="stacjaType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Łódź"/>
+            <xs:enumeration value="Piotrków"/>
+            <xs:enumeration value="Pabianice"/>
+            <xs:enumeration value="Warszawa"/>
+            <xs:enumeration value="Koluszki"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:attributeGroup name="cenaAttr">
+        <xs:attribute name="typ" type="promocje"/>
+        <xs:attribute name="promocja" type="xs:boolean" default="false"/>
+    </xs:attributeGroup>
+
+    <xs:group name="stacja_godzina">
+        <xs:sequence>
+            <xs:element name="stacja" type="stacjaType"/>
+            <xs:element name="opóźnienie" type="xs:time" minOccurs="0"/>
+            <xs:element name="godzina" type="xs:time"/>
+        </xs:sequence>
+    </xs:group>
+
+    <xs:simpleType name="promocje">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="student" />
+            <xs:enumeration value="pracownik" />
+            <xs:enumeration value="emeryt" />
+            <xs:enumeration value="normalny" />
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>

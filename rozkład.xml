@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<people>
+  <person born="1912" died="1954">
+    <name>
+      <first_name>Alan</first_name>
+      <last_name>Turing</last_name>
+    </name>
+    <occupation profid="cs"/>
+    <occupation profid="math"/>
+    <occupation profid="crypto"/>
+  </person>
+  <person born="1918" died="1988">
+    <name>
+      <first_name>Richard</first_name>
+      <middle_initial>P</middle_initial>
+      <last_name>Feynman</last_name>
+    </name>
+    <occupation profid="phys"/>
+    <hobby>Playing the bongoes</hobby>
+  </person>
+
+  <profession code="cs">computer scientist</profession>
+  <profession code="math">mathematician</profession>
+  <profession code="crypto">cryptographer</profession>
+  <profession code="phys">physicist</profession>
+</people>
