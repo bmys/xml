@@ -10,9 +10,18 @@
 <!--  <xsl:key name="occ" match="profession" use="@code" />-->
 
   <xsl:template match="/">
-    <xsl:value-of select="./pkp:rozkład/pkp:nagłówek" />
+    <xsl:apply-templates select="/pkp:rozkład/pkp:nagłówek"/>
+    <!--    <xsl:value-of select="./pkp:rozkład/pkp:nagłówek" />-->
   </xsl:template>
 
+    <xsl:template match="pkp:nagłówek">
+      <nagłówek>
+        <tytuł>
+          <xsl:value-of select="./pkp:tytuł" />
+        </tytuł>
+
+      </nagłówek>
+    </xsl:template>
 
 <!--  <xsl:template match="person">-->
 <!--    <Person>-->
@@ -22,6 +31,7 @@
 <!--      <xsl:apply-templates select="occupation"/>-->
 <!--    </Person>-->
 <!--  </xsl:template>-->
+
 <!--  <xsl:template match="occupation">-->
 <!--    <Occupation>-->
 <!--      <xsl:value-of select="key('occ', ./@profid)"/>-->

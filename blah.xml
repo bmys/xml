@@ -1,35 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-    
+<nagłówek xmlns:pkp="www.pkp.pl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<tytuł>
       Rozkład jazdy PKP
-    
-    
-      
-        Bartosz
-        Myśliwiec
-        211827
-      
-      
-        Autor
-        z emailem
-        211827@edu.p.lodz.pl
-      
-    
-
-    
-      2019-04-26
-    
-
-    
-      
-        Ikony połączeń
-        www.rozklad-pkp.pl
-      
-
-      
-        Logo pociąg
-        www.rozklad-pkp.pl
-      
-    
-
-
-  
+    </tytuł>
+</nagłówek>
