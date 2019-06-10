@@ -1,28 +1,35 @@
-<?xml version="1.0" encoding="UTF-8"?><summary>
-<Person>
-<Name>
+<?xml version="1.0" encoding="UTF-8"?>
     
-      Alan
-      Turing
+      Rozkład jazdy PKP
     
     
+      
+        Bartosz
+        Myśliwiec
+        211827
+      
+      
+        Autor
+        z emailem
+        211827@edu.p.lodz.pl
+      
     
+
     
-  </Name>
-<Occupation>computer scientist</Occupation>
-<Occupation>mathematician</Occupation>
-<Occupation>cryptographer</Occupation>
-</Person>
-<Person>
-<Name>
+      2019-04-26
     
-      Richard
-      P
-      Feynman
+
     
+      
+        Ikony połączeń
+        www.rozklad-pkp.pl
+      
+
+      
+        Logo pociąg
+        www.rozklad-pkp.pl
+      
     
-    Playing the bongoes
-  </Name>
-<Occupation>physicist</Occupation>
-</Person>
-</summary>
+
+
+  

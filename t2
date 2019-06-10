@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <elementó>
+    <child>a</child>
+    <child>b</child>
+  </elementó>
+  <otherElement>
+    <child>c</child>
+  </otherElement>
+</root>
