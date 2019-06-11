@@ -43,23 +43,23 @@
 </przewoźnicy>
 <przyjazdy>
 <połączenie>
-<przewoźnik>REG</przewoźnik>
+<przewoźnik>POLREGIO</przewoźnik>
 <pociąg>Maria</pociąg>
 </połączenie>
 <połączenie>
-<przewoźnik>IC</przewoźnik>
+<przewoźnik>InterCity</przewoźnik>
 <pociąg>Stefan</pociąg>
 </połączenie>
 <połączenie>
-<przewoźnik>EIP</przewoźnik>
+<przewoźnik>Express InterCity Premium</przewoźnik>
 <pociąg>Pendolino</pociąg>
 </połączenie>
 <połączenie>
-<przewoźnik>TLK</przewoźnik>
+<przewoźnik>Twoje Linie Kolejowe</przewoźnik>
 <pociąg>Maglev</pociąg>
 </połączenie>
 <połączenie>
-<przewoźnik>REG</przewoźnik>
+<przewoźnik>POLREGIO</przewoźnik>
 <pociąg>TGV</pociąg>
 </połączenie>
 </przyjazdy>

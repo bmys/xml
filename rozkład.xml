@@ -39,10 +39,10 @@
   <połączenia>
 
     <przewoźnicy>
-      <przewoźnik id="EIP"/>
-      <przewoźnik id="IC"/>
-      <przewoźnik id="REG"/>
-      <przewoźnik id="TLK"/>
+      <przewoźnik id="EIP">Express InterCity Premium</przewoźnik>
+      <przewoźnik id="IC">InterCity</przewoźnik>
+      <przewoźnik id="REG">POLREGIO</przewoźnik>
+      <przewoźnik id="TLK">Twoje Linie Kolejowe</przewoźnik>
     </przewoźnicy>
 
     <przyjazdy>

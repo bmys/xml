@@ -39,8 +39,8 @@
   <xsl:template match="pkp:połączenie">
     <połączenie>
       <przewoźnik>
-        <!--      <xsl:value-of select="key('prze', ./@idref)"/>-->
-        <xsl:value-of select="./@idref"/>
+        <xsl:value-of select="key('prze', @idref)"/>
+<!--        <xsl:value-of select="./@idref"/>-->
       </przewoźnik>
       <pociąg>
         <xsl:value-of select="./pkp:pociąg"/>
