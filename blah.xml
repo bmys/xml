@@ -1,6 +1,67 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<nagłówek xmlns:pkp="www.pkp.pl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-<tytuł>
+<?xml version="1.0" encoding="UTF-8"?><pkp:rozkład xmlns:pkp="www.pkp.pl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<nagłówek xmlns="www.pkp.pl">
+    <tytuł>
       Rozkład jazdy PKP
     </tytuł>
-</nagłówek>
+    <autorzy>
+      <autor>
+        <imie>Bartosz</imie>
+        <nazwisko>Myśliwiec</nazwisko>
+        <nr_indeksu>211827</nr_indeksu>
+      </autor>
+      <autor>
+        <imie>Autor</imie>
+        <nazwisko>z emailem</nazwisko>
+        <email>211827@edu.p.lodz.pl</email>
+      </autor>
+    </autorzy>
+
+    <data_modyfikacji>
+      2019-04-26
+    </data_modyfikacji>
+
+    <credits>
+      <credit>
+        <nazwa>Ikony połączeń</nazwa>
+        <źródło>www.rozklad-pkp.pl</źródło>
+      </credit>
+
+      <credit>
+        <nazwa>Logo pociąg</nazwa>
+        <źródło>www.rozklad-pkp.pl</źródło>
+      </credit>
+    </credits>
+
+
+  </nagłówek>
+<połączenia>
+<przewoźnicy>
+<przewoźnik id="EIP"/>
+<przewoźnik id="IC"/>
+<przewoźnik id="REG"/>
+<przewoźnik id="TLK"/>
+</przewoźnicy>
+<przyjazdy>
+<połączenie>
+<przewoźnik>REG</przewoźnik>
+<pociąg>Maria</pociąg>
+</połączenie>
+<połączenie>
+<przewoźnik>IC</przewoźnik>
+<pociąg>Stefan</pociąg>
+</połączenie>
+<połączenie>
+<przewoźnik>EIP</przewoźnik>
+<pociąg>Pendolino</pociąg>
+</połączenie>
+<połączenie>
+<przewoźnik>TLK</przewoźnik>
+<pociąg>Maglev</pociąg>
+</połączenie>
+<połączenie>
+<przewoźnik>REG</przewoźnik>
+<pociąg>TGV</pociąg>
+</połączenie>
+</przyjazdy>
+</połączenia>
+</pkp:rozkład>
