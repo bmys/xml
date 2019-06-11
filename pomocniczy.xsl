@@ -17,9 +17,26 @@
     <pkp:rozkład>
       <xsl:copy-of select="./pkp:rozkład/pkp:nagłówek"/>
       <xsl:apply-templates select="./pkp:rozkład/pkp:połączenia"/>
+      <podsumowanie>
+          <data-utworzenia>
+            <xsl:variable name="dt" select="date:date()"/>
+            <xsl:value-of select="$dt"/>
+          </data-utworzenia>
+
+      <suma-cen>
+
+<!--            <xsl:value-of select="./pkp:rozkład/pkp:połączenia/pkp:przyjazdy//pkp:połączenie"/>-->
+
+        <xsl:value-of select="sum(./pkp:rozkład/pkp:połączenia/pkp:przyjazdy/pkp:połączenie/pkp:informacje/pkp:cena)"/>
+      </suma-cen>
+
+<!--        <suma-cen>-->
+<!--          <xsl:value-of select="sum(./pkp:rozkład/pkp:połączenia/pkp:informacje//pkp:cena)"/>-->
+<!--        </suma-cen>-->
+
+      </podsumowanie>
     </pkp:rozkład>
 
-    <!--    <xsl:value-of select="./pkp:rozkład/pkp:nagłówek" />-->
   </xsl:template>
 
 
@@ -54,30 +71,9 @@
       <xsl:copy-of select="./pkp:wyjazd"/>
       <xsl:copy-of select="./pkp:przyjazd"/>
       <xsl:copy-of select="./pkp:stacje"/>
-<!--      <xsl:copy-of select="./pkp:informacje"/>-->
 
       <xsl:apply-templates select="./pkp:informacje"/>
 
-
-      <czas>
-<!--        <xsl:variable name="date1" select="./pkp:wyjazd/pkp:godzina" />-->
-<!--        <xsl:variable name="date2" select="./pkp:przyjazd/pkp:godzina" />-->
-
-<!--        <czas-podrózy>-->
-<!--          <xsl:variable name="dt" select="date:getNumber(date:dateTime()) - date:getNumber(date:dateTime())"/>-->
-<!--          <xsl:value-of select="$dt"/>-->
-<!--        </czas-podrózy>-->
-
-
-<!--        <data-utworzenia>-->
-<!--          <xsl:variable name="dt" select="date:dateTime()"/>-->
-<!--          <xsl:value-of select="$dt"/>-->
-<!--        </data-utworzenia>-->
-        <!--        <xsl:value-of select="xs:date($date1)"/>-->
-
-<!--        <xsl:value-of select="days-from-duration()"/>-->
-
-      </czas>
     </połączenie>
   </xsl:template>
 
@@ -89,6 +85,10 @@
         <xsl:variable name="najtańsze" select="math:min(pkp:cena)"/>
         <xsl:value-of select="$najtańsze"/>
       </najtańsze>
+
+      <suma-cen>
+          <xsl:value-of select="sum(./pkp:cena)"/>
+      </suma-cen>
 
       <xsl:copy-of select="./pkp:dystans"/>
       <xsl:copy-of select="./pkp:cena"/>
