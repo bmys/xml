@@ -22,7 +22,7 @@
           <xsl:for-each select="./pkp:rozkład/połączenia/przyjazdy/połączenie">
             <tr>
               <td><xsl:value-of select="pociąg"/></td>
-
+              <td><xsl:value-of select="./informacje/pkp:dystans"/></td>
             </tr>
           </xsl:for-each>
         </table>
