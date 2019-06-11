@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><pkp:rozkład xmlns:pkp="www.pkp.pl" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:date="http://exslt.org/dates-and-times" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<?xml version="1.0" encoding="UTF-8"?><pkp:rozkład xmlns:pkp="www.pkp.pl" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:date="http://exslt.org/dates-and-times" xmlns:math="http://exslt.org/math" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 <nagłówek xmlns="www.pkp.pl">
     <tytuł>
       Rozkład jazdy PKP
@@ -53,9 +53,16 @@
           <stacja>Łódź</stacja>
           <godzina>12:35:00</godzina>
         </przyjazd>
-<czas>
-<czas-podrózy>3</czas-podrózy>
-</czas>
+<stacje xmlns="www.pkp.pl">
+          <stacja>Piotrków</stacja>
+          <stacja>Łódź</stacja>
+        </stacje>
+<informacje>
+<najtańsze>15.07</najtańsze>
+<dystans xmlns="www.pkp.pl">13km</dystans>
+<cena xmlns="www.pkp.pl" typ="student" promocja="true">15.07</cena>
+</informacje>
+<czas/>
 </połączenie>
 <połączenie>
 <przewoźnik przewoźnik="IC">InterCity</przewoźnik>
@@ -68,9 +75,17 @@
           <stacja>Piotrków</stacja>
           <godzina>14:35:00</godzina>
         </przyjazd>
-<czas>
-<czas-podrózy>3</czas-podrózy>
-</czas>
+<stacje xmlns="www.pkp.pl">
+          <stacja>Pabianice</stacja>
+          <stacja>Piotrków</stacja>
+        </stacje>
+<informacje>
+<najtańsze>10.47</najtańsze>
+<dystans xmlns="www.pkp.pl">53km</dystans>
+<cena xmlns="www.pkp.pl" typ="emeryt">10.47</cena>
+<cena xmlns="www.pkp.pl" typ="student">12.47</cena>
+</informacje>
+<czas/>
 </połączenie>
 <połączenie>
 <przewoźnik przewoźnik="EIP">Express InterCity Premium</przewoźnik>
@@ -83,9 +98,17 @@
           <stacja>Warszawa</stacja>
           <godzina>18:35:00</godzina>
         </przyjazd>
-<czas>
-<czas-podrózy>3</czas-podrózy>
-</czas>
+<stacje xmlns="www.pkp.pl">
+          <stacja>Koluszki</stacja>
+          <stacja>Warszawa</stacja>
+        </stacje>
+<informacje>
+<najtańsze>8.47</najtańsze>
+<dystans xmlns="www.pkp.pl">153km</dystans>
+<cena xmlns="www.pkp.pl" typ="emeryt">8.47</cena>
+<cena xmlns="www.pkp.pl" typ="pracownik">16.47</cena>
+</informacje>
+<czas/>
 </połączenie>
 <połączenie>
 <przewoźnik przewoźnik="TLK">Twoje Linie Kolejowe</przewoźnik>
@@ -99,9 +122,17 @@
           <opóźnienie>14:35:00</opóźnienie>
           <godzina>14:20:00</godzina>
         </przyjazd>
-<czas>
-<czas-podrózy>3</czas-podrózy>
-</czas>
+<stacje xmlns="www.pkp.pl">
+          <stacja>Łódź</stacja>
+          <stacja>Warszawa</stacja>
+        </stacje>
+<informacje>
+<najtańsze>3.47</najtańsze>
+<dystans xmlns="www.pkp.pl">73km</dystans>
+<cena xmlns="www.pkp.pl" typ="emeryt">3.47</cena>
+<cena xmlns="www.pkp.pl" typ="pracownik">5.47</cena>
+</informacje>
+<czas/>
 </połączenie>
 <połączenie>
 <przewoźnik przewoźnik="REG">POLREGIO</przewoźnik>
@@ -115,9 +146,16 @@
           <opóźnienie>14:35:00</opóźnienie>
           <godzina>09:35:00</godzina>
         </przyjazd>
-<czas>
-<czas-podrózy>3</czas-podrózy>
-</czas>
+<stacje xmlns="www.pkp.pl">
+          <stacja>Warszawa</stacja>
+          <stacja>Łódź</stacja>
+        </stacje>
+<informacje>
+<najtańsze>12.07</najtańsze>
+<dystans xmlns="www.pkp.pl">130km</dystans>
+<cena xmlns="www.pkp.pl" typ="student">12.07</cena>
+</informacje>
+<czas/>
 </połączenie>
 </przyjazdy>
 </połączenia>
