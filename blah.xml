@@ -43,6 +43,54 @@
 </przewoźnicy>
 <przyjazdy>
 <połączenie>
+<przewoźnik przewoźnik="TLK">Twoje Linie Kolejowe</przewoźnik>
+<pociąg>Maglev</pociąg>
+<wyjazd xmlns="www.pkp.pl">
+          <stacja>Łódź</stacja>
+          <godzina>14:15:00</godzina>
+        </wyjazd>
+<przyjazd xmlns="www.pkp.pl" opóźnienie="00:15:00">
+          <stacja>Warszawa</stacja>
+          <opóźnienie>14:35:00</opóźnienie>
+          <godzina>14:20:00</godzina>
+        </przyjazd>
+<stacje xmlns="www.pkp.pl">
+          <stacja>Łódź</stacja>
+          <stacja>Warszawa</stacja>
+        </stacje>
+<informacje>
+<najtańsze>3.47</najtańsze>
+<suma-cen>8.94</suma-cen>
+<dystans xmlns="www.pkp.pl">73km</dystans>
+<cena xmlns="www.pkp.pl" typ="emeryt">3.47</cena>
+<cena xmlns="www.pkp.pl" typ="pracownik">5.47</cena>
+</informacje>
+</połączenie>
+<połączenie>
+<przewoźnik przewoźnik="TLK">Twoje Linie Kolejowe</przewoźnik>
+<pociąg>Maglev</pociąg>
+<wyjazd xmlns="www.pkp.pl">
+          <stacja>Warszawa</stacja>
+          <godzina>13:10:00</godzina>
+        </wyjazd>
+<przyjazd xmlns="www.pkp.pl" opóźnienie="00:15:00">
+          <stacja>Łódź</stacja>
+          <opóźnienie>14:35:00</opóźnienie>
+          <godzina>14:20:00</godzina>
+        </przyjazd>
+<stacje xmlns="www.pkp.pl">
+          <stacja>Warszawa</stacja>
+          <stacja>Łódź</stacja>
+        </stacje>
+<informacje>
+<najtańsze>8.47</najtańsze>
+<suma-cen>17.94</suma-cen>
+<dystans xmlns="www.pkp.pl">713km</dystans>
+<cena xmlns="www.pkp.pl" typ="emeryt">8.47</cena>
+<cena xmlns="www.pkp.pl" typ="pracownik">9.47</cena>
+</informacje>
+</połączenie>
+<połączenie>
 <przewoźnik przewoźnik="REG">POLREGIO</przewoźnik>
 <pociąg>Maria</pociąg>
 <wyjazd xmlns="www.pkp.pl">
@@ -62,6 +110,51 @@
 <suma-cen>15.07</suma-cen>
 <dystans xmlns="www.pkp.pl">13km</dystans>
 <cena xmlns="www.pkp.pl" typ="student" promocja="true">15.07</cena>
+</informacje>
+</połączenie>
+<połączenie>
+<przewoźnik przewoźnik="REG">POLREGIO</przewoźnik>
+<pociąg>Krzysztof</pociąg>
+<wyjazd xmlns="www.pkp.pl">
+          <stacja>Łódź</stacja>
+          <godzina>08:45:00</godzina>
+        </wyjazd>
+<przyjazd xmlns="www.pkp.pl">
+          <stacja>Pabianice</stacja>
+          <godzina>11:35:00</godzina>
+        </przyjazd>
+<stacje xmlns="www.pkp.pl">
+          <stacja>Łódź</stacja>
+          <stacja>Pabianice</stacja>
+        </stacje>
+<informacje>
+<najtańsze>4.05</najtańsze>
+<suma-cen>4.05</suma-cen>
+<dystans xmlns="www.pkp.pl">10km</dystans>
+<cena xmlns="www.pkp.pl" typ="student" promocja="true">4.05</cena>
+</informacje>
+</połączenie>
+<połączenie>
+<przewoźnik przewoźnik="REG">POLREGIO</przewoźnik>
+<pociąg>TGV</pociąg>
+<wyjazd xmlns="www.pkp.pl">
+          <stacja>Warszawa</stacja>
+          <godzina>08:35:00</godzina>
+        </wyjazd>
+<przyjazd xmlns="www.pkp.pl" opóźnienie="00:25:00">
+          <stacja>Łódź</stacja>
+          <opóźnienie>14:35:00</opóźnienie>
+          <godzina>09:35:00</godzina>
+        </przyjazd>
+<stacje xmlns="www.pkp.pl">
+          <stacja>Warszawa</stacja>
+          <stacja>Łódź</stacja>
+        </stacje>
+<informacje>
+<najtańsze>12.07</najtańsze>
+<suma-cen>12.07</suma-cen>
+<dystans xmlns="www.pkp.pl">130km</dystans>
+<cena xmlns="www.pkp.pl" typ="student">12.07</cena>
 </informacje>
 </połączenie>
 <połączenie>
@@ -110,57 +203,11 @@
 <cena xmlns="www.pkp.pl" typ="pracownik">16.47</cena>
 </informacje>
 </połączenie>
-<połączenie>
-<przewoźnik przewoźnik="TLK">Twoje Linie Kolejowe</przewoźnik>
-<pociąg>Maglev</pociąg>
-<wyjazd xmlns="www.pkp.pl">
-          <stacja>Łódź</stacja>
-          <godzina>14:15:00</godzina>
-        </wyjazd>
-<przyjazd xmlns="www.pkp.pl" opóźnienie="00:15:00">
-          <stacja>Warszawa</stacja>
-          <opóźnienie>14:35:00</opóźnienie>
-          <godzina>14:20:00</godzina>
-        </przyjazd>
-<stacje xmlns="www.pkp.pl">
-          <stacja>Łódź</stacja>
-          <stacja>Warszawa</stacja>
-        </stacje>
-<informacje>
-<najtańsze>3.47</najtańsze>
-<suma-cen>8.94</suma-cen>
-<dystans xmlns="www.pkp.pl">73km</dystans>
-<cena xmlns="www.pkp.pl" typ="emeryt">3.47</cena>
-<cena xmlns="www.pkp.pl" typ="pracownik">5.47</cena>
-</informacje>
-</połączenie>
-<połączenie>
-<przewoźnik przewoźnik="REG">POLREGIO</przewoźnik>
-<pociąg>TGV</pociąg>
-<wyjazd xmlns="www.pkp.pl">
-          <stacja>Warszawa</stacja>
-          <godzina>08:35:00</godzina>
-        </wyjazd>
-<przyjazd xmlns="www.pkp.pl" opóźnienie="00:25:00">
-          <stacja>Łódź</stacja>
-          <opóźnienie>14:35:00</opóźnienie>
-          <godzina>09:35:00</godzina>
-        </przyjazd>
-<stacje xmlns="www.pkp.pl">
-          <stacja>Warszawa</stacja>
-          <stacja>Łódź</stacja>
-        </stacje>
-<informacje>
-<najtańsze>12.07</najtańsze>
-<suma-cen>12.07</suma-cen>
-<dystans xmlns="www.pkp.pl">130km</dystans>
-<cena xmlns="www.pkp.pl" typ="student">12.07</cena>
-</informacje>
-</połączenie>
 </przyjazdy>
 </połączenia>
 <podsumowanie>
 <data-utworzenia>2019-06-11+02:00</data-utworzenia>
-<suma-cen>83.96000000000001</suma-cen>
+<suma-cen>105.94999999999999</suma-cen>
+<ilość-połączeń>7</ilość-połączeń>
 </podsumowanie>
 </pkp:rozkład>

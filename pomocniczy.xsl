@@ -17,6 +17,7 @@
     <pkp:rozkład>
       <xsl:copy-of select="./pkp:rozkład/pkp:nagłówek"/>
       <xsl:apply-templates select="./pkp:rozkład/pkp:połączenia"/>
+
       <podsumowanie>
           <data-utworzenia>
             <xsl:variable name="dt" select="date:date()"/>
@@ -24,11 +25,13 @@
           </data-utworzenia>
 
       <suma-cen>
-
-<!--            <xsl:value-of select="./pkp:rozkład/pkp:połączenia/pkp:przyjazdy//pkp:połączenie"/>-->
-
         <xsl:value-of select="sum(./pkp:rozkład/pkp:połączenia/pkp:przyjazdy/pkp:połączenie/pkp:informacje/pkp:cena)"/>
       </suma-cen>
+
+        <ilość-połączeń>
+          <xsl:value-of select="count(./pkp:rozkład/pkp:połączenia/pkp:przyjazdy/pkp:połączenie)"/>
+        </ilość-połączeń>
+
 
 <!--        <suma-cen>-->
 <!--          <xsl:value-of select="sum(./pkp:rozkład/pkp:połączenia/pkp:informacje//pkp:cena)"/>-->
@@ -50,7 +53,9 @@
         <przewoźnik id="TLK"/>
       </przewoźnicy>
       <przyjazdy>
-        <xsl:apply-templates select="./pkp:przyjazdy/pkp:połączenie"/>
+        <xsl:apply-templates select="./pkp:przyjazdy/pkp:połączenie">
+          <xsl:sort select="@idref" data-type="text" order="descending"/>
+        </xsl:apply-templates>
       </przyjazdy>
     </połączenia>
   </xsl:template>

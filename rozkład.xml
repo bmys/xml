@@ -88,6 +88,26 @@
         </informacje>
       </połączenie>
 
+      <połączenie idref="REG">
+        <pociąg>Krzysztof</pociąg>
+        <wyjazd>
+          <stacja>Łódź</stacja>
+          <godzina>08:45:00</godzina>
+        </wyjazd>
+        <przyjazd>
+          <stacja>Pabianice</stacja>
+          <godzina>11:35:00</godzina>
+        </przyjazd>
+        <stacje>
+          <stacja>Łódź</stacja>
+          <stacja>Pabianice</stacja>
+        </stacje>
+        <informacje>
+          <dystans>10km</dystans>
+          <cena typ="student" promocja="true">4.05</cena>
+        </informacje>
+      </połączenie>
+
       <połączenie idref="EIP">
         <pociąg>Pendolino</pociąg>
         <wyjazd>
@@ -149,6 +169,29 @@
         <informacje>
           <dystans>130km</dystans>
           <cena typ="student">12.07</cena>
+        </informacje>
+      </połączenie>
+
+
+      <połączenie idref="TLK">
+        <pociąg>Maglev</pociąg>
+        <wyjazd>
+          <stacja>Warszawa</stacja>
+          <godzina>13:10:00</godzina>
+        </wyjazd>
+        <przyjazd opóźnienie="00:15:00">
+          <stacja>Łódź</stacja>
+          <opóźnienie>14:35:00</opóźnienie>
+          <godzina>14:20:00</godzina>
+        </przyjazd>
+        <stacje>
+          <stacja>Warszawa</stacja>
+          <stacja>Łódź</stacja>
+        </stacje>
+        <informacje>
+          <dystans>713km</dystans>
+          <cena typ="emeryt" >8.47</cena>
+          <cena typ="pracownik" >9.47</cena>
         </informacje>
       </połączenie>
     </przyjazdy>
