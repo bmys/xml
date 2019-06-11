@@ -10,14 +10,22 @@
   <xsl:key name="prze" match="pkp:przewoźnik" use="@id"/>
 
   <xsl:template match="/">
-    <html>
+    <html xmlns="http://www.w3.org/1999/xhtml">
       <head>
         <title>
           <xsl:value-of select="./pkp:rozkład/pkp:nagłówek/pkp:tytuł"/>
         </title>
       </head>
       <body>
+        <table>
+<!--          <xsl:value-of select="./pkp:rozkład/połączenia/przyjazdy/połączenie"/>-->
+          <xsl:for-each select="./pkp:rozkład/połączenia/przyjazdy/połączenie">
+            <tr>
+              <td><xsl:value-of select="pociąg"/></td>
 
+            </tr>
+          </xsl:for-each>
+        </table>
       </body>
     </html>
 
