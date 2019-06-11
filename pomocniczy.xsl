@@ -6,7 +6,6 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   version="3.0"
-  xsi:schemaLocation="http://www.w3.org/2005/xpath-functions ">
   xsi:schemaLocation="www.pkp.pl rozkład.xsd">
 
   <xsl:output indent="yes"/>
