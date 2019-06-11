@@ -3,6 +3,10 @@
   xmlns:pkp="www.pkp.pl"
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns:fn="http://www.w3.org/2005/xpath-functions"
+  xmlns:date="http://exslt.org/dates-and-times"
+  xsi:schemaLocation="http://www.w3.org/2005/xpath-functions ">
   xsi:schemaLocation="www.pkp.pl rozkład.xsd">
 
   <xsl:output indent="yes"/>
@@ -38,13 +42,43 @@
 
   <xsl:template match="pkp:połączenie">
     <połączenie>
+
       <przewoźnik>
+        <xsl:attribute name="przewoźnik">
+          <xsl:value-of select="./@idref"/>
+        </xsl:attribute>
         <xsl:value-of select="key('prze', @idref)"/>
-<!--        <xsl:value-of select="./@idref"/>-->
       </przewoźnik>
+
       <pociąg>
         <xsl:value-of select="./pkp:pociąg"/>
       </pociąg>
+
+      <xsl:copy-of select="./pkp:wyjazd"/>
+      <xsl:copy-of select="./pkp:przyjazd"/>
+
+      <czas>
+        <xsl:variable name="date1" select="./pkp:wyjazd/pkp:godzina" />
+        <xsl:variable name="date2" select="./pkp:przyjazd/pkp:godzina" />
+
+        <data-utworzenia>
+          <xsl:variable name="dt" select="date:dateTime()"/>
+          <xsl:value-of select="$dt"/>
+        </data-utworzenia>
+        <!--        <xsl:value-of select="xs:date($date1)"/>-->
+
+<!--        <xsl:value-of select="days-from-duration()"/>-->
+
+      </czas>
+
+
+<!--      <czas_podróży>-->
+<!--        <xsl:call-template name="xs:date:difference">-->
+<!--          <xsl:with-param name="start" select="string"/>-->
+<!--          <xsl:with-param name="end" select="string"/>-->
+<!--        </xsl:call-template>-->
+<!--      </czas_podróży>-->
+
     </połączenie>
   </xsl:template>
 

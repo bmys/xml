@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><pkp:rozkład xmlns:pkp="www.pkp.pl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<?xml version="1.0" encoding="UTF-8"?><pkp:rozkład xmlns:pkp="www.pkp.pl" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:date="http://exslt.org/dates-and-times" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 <nagłówek xmlns="www.pkp.pl">
     <tytuł>
       Rozkład jazdy PKP
@@ -43,24 +43,81 @@
 </przewoźnicy>
 <przyjazdy>
 <połączenie>
-<przewoźnik>POLREGIO</przewoźnik>
+<przewoźnik przewoźnik="REG">POLREGIO</przewoźnik>
 <pociąg>Maria</pociąg>
+<wyjazd xmlns="www.pkp.pl">
+          <stacja>Piotrków</stacja>
+          <godzina>10:35:00</godzina>
+        </wyjazd>
+<przyjazd xmlns="www.pkp.pl">
+          <stacja>Łódź</stacja>
+          <godzina>12:35:00</godzina>
+        </przyjazd>
+<czas>
+<data-utworzenia>2019-06-11T15:14:09+02:00</data-utworzenia>
+</czas>
 </połączenie>
 <połączenie>
-<przewoźnik>InterCity</przewoźnik>
+<przewoźnik przewoźnik="IC">InterCity</przewoźnik>
 <pociąg>Stefan</pociąg>
+<wyjazd xmlns="www.pkp.pl">
+          <stacja>Pabianice</stacja>
+          <godzina>11:35:00</godzina>
+        </wyjazd>
+<przyjazd xmlns="www.pkp.pl">
+          <stacja>Piotrków</stacja>
+          <godzina>14:35:00</godzina>
+        </przyjazd>
+<czas>
+<data-utworzenia>2019-06-11T15:14:09+02:00</data-utworzenia>
+</czas>
 </połączenie>
 <połączenie>
-<przewoźnik>Express InterCity Premium</przewoźnik>
+<przewoźnik przewoźnik="EIP">Express InterCity Premium</przewoźnik>
 <pociąg>Pendolino</pociąg>
+<wyjazd xmlns="www.pkp.pl">
+          <stacja>Koluszki</stacja>
+          <godzina>14:15:00</godzina>
+        </wyjazd>
+<przyjazd xmlns="www.pkp.pl">
+          <stacja>Warszawa</stacja>
+          <godzina>18:35:00</godzina>
+        </przyjazd>
+<czas>
+<data-utworzenia>2019-06-11T15:14:09+02:00</data-utworzenia>
+</czas>
 </połączenie>
 <połączenie>
-<przewoźnik>Twoje Linie Kolejowe</przewoźnik>
+<przewoźnik przewoźnik="TLK">Twoje Linie Kolejowe</przewoźnik>
 <pociąg>Maglev</pociąg>
+<wyjazd xmlns="www.pkp.pl">
+          <stacja>Łódź</stacja>
+          <godzina>14:15:00</godzina>
+        </wyjazd>
+<przyjazd xmlns="www.pkp.pl" opóźnienie="00:15:00">
+          <stacja>Warszawa</stacja>
+          <opóźnienie>14:35:00</opóźnienie>
+          <godzina>14:20:00</godzina>
+        </przyjazd>
+<czas>
+<data-utworzenia>2019-06-11T15:14:09+02:00</data-utworzenia>
+</czas>
 </połączenie>
 <połączenie>
-<przewoźnik>POLREGIO</przewoźnik>
+<przewoźnik przewoźnik="REG">POLREGIO</przewoźnik>
 <pociąg>TGV</pociąg>
+<wyjazd xmlns="www.pkp.pl">
+          <stacja>Warszawa</stacja>
+          <godzina>08:35:00</godzina>
+        </wyjazd>
+<przyjazd xmlns="www.pkp.pl" opóźnienie="00:25:00">
+          <stacja>Łódź</stacja>
+          <opóźnienie>14:35:00</opóźnienie>
+          <godzina>09:35:00</godzina>
+        </przyjazd>
+<czas>
+<data-utworzenia>2019-06-11T15:14:09+02:00</data-utworzenia>
+</czas>
 </połączenie>
 </przyjazdy>
 </połączenia>
