@@ -61,10 +61,14 @@
         <xsl:variable name="date1" select="./pkp:wyjazd/pkp:godzina" />
         <xsl:variable name="date2" select="./pkp:przyjazd/pkp:godzina" />
 
-        <data-utworzenia>
-          <xsl:variable name="dt" select="date:dateTime()"/>
+        <czas-podrózy>
+          <xsl:variable name="dt" select="date:dayInWeek(date:dateTime())"/>
           <xsl:value-of select="$dt"/>
-        </data-utworzenia>
+        </czas-podrózy>
+<!--        <data-utworzenia>-->
+<!--          <xsl:variable name="dt" select="date:dateTime()"/>-->
+<!--          <xsl:value-of select="$dt"/>-->
+<!--        </data-utworzenia>-->
         <!--        <xsl:value-of select="xs:date($date1)"/>-->
 
 <!--        <xsl:value-of select="days-from-duration()"/>-->
