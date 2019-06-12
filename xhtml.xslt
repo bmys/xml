@@ -19,7 +19,9 @@
         </title>
       </head>
 
-      <body>
+      <body style="margin: 0">
+        <div style="width: 100vw">
+          <h2>Rozkład jazdy</h2>
         <table border="1">
           <tr>
             <th>Numer</th>
@@ -53,7 +55,6 @@
                       cena:
                         <xsl:value-of select="."/>
                       zł
-
                     </li>
                   </xsl:for-each>
                 </ul>
@@ -69,6 +70,24 @@
             </tr>
           </xsl:for-each>
         </table>
+        </div>
+        <div style="width: 100vw; margin-top: 50px">
+          <h2>Podsumowanie</h2>
+          <table border="1" style="width: 100vw">
+            <tr>
+              <th>Data utworzenia</th>
+              <th>Suma cen</th>
+              <th>Ilość połączeń</th>
+            </tr>
+            <tr>
+              <td>
+                <xsl:value-of select="./pkp:rozkład/podsumowanie/data-utworzenia"/>
+              </td>
+              <td> <xsl:value-of select="./pkp:rozkład/podsumowanie/suma-cen"/></td>
+              <td> <xsl:value-of select="./pkp:rozkład/podsumowanie/ilość-połączeń"/></td>
+            </tr>
+          </table>
+        </div>
       </body>
     </html>
 
