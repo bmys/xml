@@ -13,7 +13,6 @@
 
   <xsl:template match="/">
     <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
-
       <head>
         <title>
           <xsl:value-of select="./pkp:rozkład/pkp:nagłówek/pkp:tytuł"/>
@@ -21,7 +20,7 @@
       </head>
 
       <body>
-        <table>
+        <table border="1">
           <tr>
             <th>Numer</th>
             <th>Przewoźnik</th>
@@ -31,7 +30,7 @@
             <th>Czas przyjazdu</th>
             <th>Stacja przyjazdu</th>
             <th>Dystans</th>
-            <th colspan="3">Ceny</th>
+            <th>Ceny</th>
             <th>stacje</th>
           </tr>
           <xsl:for-each select="./pkp:rozkład/połączenia/przyjazdy/połączenie">
@@ -44,6 +43,29 @@
               <td><xsl:value-of select="pkp:przyjazd/pkp:godzina"/></td>
               <td><xsl:value-of select="pkp:przyjazd/pkp:stacja"/></td>
               <td><xsl:value-of select="./informacje/pkp:dystans"/></td>
+              <td>
+                <ul>
+                  <xsl:for-each select="./informacje/pkp:cena">
+                    <li>
+                      typ:
+                        <xsl:value-of select="@typ"/>
+
+                      cena:
+                        <xsl:value-of select="."/>
+                      zł
+
+                    </li>
+                  </xsl:for-each>
+                </ul>
+
+              </td>
+              <td>
+                <ul>
+                  <xsl:for-each select="./pkp:stacje/pkp:stacja">
+                    <li><xsl:value-of select="."/></li>
+                  </xsl:for-each>
+                </ul>
+              </td>
             </tr>
           </xsl:for-each>
         </table>
