@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><pkp:rozkład xmlns:pkp="www.pkp.pl" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:date="http://exslt.org/dates-and-times" xmlns:math="http://exslt.org/math" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 <nagłówek xmlns="www.pkp.pl">
-    <tytuł>
-      Rozkład jazdy PKP
-    </tytuł>
+    <tytuł>Rozkład jazdy PKP</tytuł>
     <autorzy>
       <autor>
         <imie>Bartosz</imie>
