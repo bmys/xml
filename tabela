@@ -1,0 +1,28 @@
+ <table>
+      <tr>
+        <th>Numer</th>
+        <th>Przewoźnik</th>
+        <th>Pociąg</th>
+        <th>Czas wyjazdu</th>
+        <th>Stacja wyjazdu</th>
+        <th>Czas przyjazdu</th>
+        <th>Stacja przyjazdu</th>
+        <th>Dystans</th>
+        <th colspan="3">Ceny</th>
+        <th>stacje</th>
+      </tr>
+      <tr>
+        <td>num</td>
+        <td>prze</td>
+        <td>poc</td>
+        <td>czwyj</td>
+        <td>stawyj</td>
+        <td>czaprz</td>
+        <td>staprzy</td>
+        <td>dyst</td>
+        <td>typ</td>
+        <td>promocja</td>
+        <td>kwota</td>
+        <td>stac</td>
+      </tr>
+    </table>
