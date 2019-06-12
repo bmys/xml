@@ -1,3 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
 <xsl:stylesheet
   xmlns:pkp="www.pkp.pl"
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
@@ -5,12 +7,12 @@
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   version="3.0">
 
-  <xsl:output method="html" indent="yes"/>
+  <xsl:output method="html" indent="yes" encoding="utf-8"/>
 
   <xsl:key name="prze" match="pkp:przewoźnik" use="@id"/>
 
   <xsl:template match="/">
-    <html xmlns="http://www.w3.org/1999/xhtml">
+    <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
 
       <head>
         <title>
@@ -37,6 +39,10 @@
               <td><xsl:number/></td>
               <td><xsl:value-of select="przewoźnik"/></td>
               <td><xsl:value-of select="pociąg"/></td>
+              <td><xsl:value-of select="pkp:wyjazd/pkp:godzina"/></td>
+              <td><xsl:value-of select="pkp:wyjazd/pkp:stacja"/></td>
+              <td><xsl:value-of select="pkp:przyjazd/pkp:godzina"/></td>
+              <td><xsl:value-of select="pkp:przyjazd/pkp:stacja"/></td>
               <td><xsl:value-of select="./informacje/pkp:dystans"/></td>
             </tr>
           </xsl:for-each>
