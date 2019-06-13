@@ -12,16 +12,28 @@
     select="'                                                                                 '">
   </xsl:variable>
 
-<xsl:template match="/">
+<!--  <xsl:template name="pad">-->
+<!--    <xsl:param name="element" />-->
+<!--    <xsl:value-of select="$element"/>-->
+<!--  </xsl:template>-->
+
+<xsl:template name="pad">
+  <xsl:param name="element" />
+    <xsl:variable name="padding" select="50-string-length($element)"/>
+    <xsl:variable name="padd" select="substring($spacje, $padding)"/>
+    <xsl:value-of select="concat($element, $padd)"/>
+</xsl:template>
+
 <xsl:template match="/">
 <!--      <xsl:value-of select="$spacje"/>-->
 
 <xsl:for-each select="./pkp:rozkład/połączenia/przyjazdy/połączenie">
-
-  <xsl:variable name="padding" select="50-string-length(pociąg)"/>
-  <xsl:variable name="padd" select="substring($spacje, $padding)"/>
-  <xsl:value-of select="concat(pociąg, $padd)"/>
-
+<!--  <xsl:variable name="padding" select="50-string-length(pociąg)"/>-->
+<!--  <xsl:variable name="padd" select="substring($spacje, $padding)"/>-->
+<!--  <xsl:value-of select="concat(pociąg, $padd)"/>-->
+  <xsl:call-template name="pad">
+    <xsl:with-param name="element" select="./pociąg"/>
+  </xsl:call-template>
 
 </xsl:for-each>
 
@@ -34,6 +46,6 @@
 <!--11<xsl:value-of select="substring($spacje, $padding)"/>11-->
 
 </xsl:template>
-</xsl:template>
+
 
 </xsl:stylesheet>
