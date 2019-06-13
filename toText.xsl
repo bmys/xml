@@ -38,11 +38,41 @@
 <!--  <xsl:variable name="padd" select="substring($spacje, $padding)"/>-->
 <!--  <xsl:value-of select="concat(pociąg, $padd)"/>-->
   <xsl:call-template name="pad">
-    <xsl:with-param name="element" select="./pociąg"/>
+    <xsl:with-param name="element" select="pociąg"/>
   </xsl:call-template>
+
   <xsl:call-template name="pad">
-    <xsl:with-param name="element" select="./przewoźnik"/>
+    <xsl:with-param name="element" select="przewoźnik"/>
   </xsl:call-template>
+
+  <xsl:call-template name="pad">
+    <xsl:with-param name="element" select="pkp:wyjazd/pkp:stacja"/>
+  </xsl:call-template>
+
+  <xsl:call-template name="pad">
+    <xsl:with-param name="element" select="pkp:wyjazd/pkp:godzina"/>
+  </xsl:call-template>
+
+  <xsl:call-template name="pad">
+    <xsl:with-param name="element" select="pkp:przyjazd/pkp:stacja"/>
+  </xsl:call-template>
+
+  <xsl:call-template name="pad">
+    <xsl:with-param name="element" select="pkp:przyjazd/pkp:godzina"/>
+  </xsl:call-template>
+
+  <xsl:variable name="stacyjki">
+    <xsl:for-each select="pkp:stacje/pkp:stacja">
+      <xsl:value-of select="." />
+      <xsl:value-of select="' '" />
+    </xsl:for-each>
+  </xsl:variable>
+
+  <xsl:call-template name="pad">
+    <xsl:with-param name="element" select="$stacyjki"/>
+  </xsl:call-template>
+
+
   <xsl:value-of select="$newline"/>
 </xsl:for-each>
 
