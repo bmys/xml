@@ -11,16 +11,22 @@
     name="spacje"
     select="'                                                                                 '">
   </xsl:variable>
+  <xsl:variable name='newline'><xsl:text>
+</xsl:text></xsl:variable>
 
 <!--  <xsl:template name="pad">-->
 <!--    <xsl:param name="element" />-->
 <!--    <xsl:value-of select="$element"/>-->
 <!--  </xsl:template>-->
 
+  <!--    <xsl:variable name="padding" select="50-string-length($element)"/>-->
+  <!--    <xsl:variable name="padd" select="substring($spacje, $padding)"/>-->
+<!--  <xsl:value-of select="concat($element, substring($spacje, 50-string-length($element)))"/>-->
+
 <xsl:template name="pad">
   <xsl:param name="element" />
     <xsl:variable name="padding" select="50-string-length($element)"/>
-    <xsl:variable name="padd" select="substring($spacje, $padding)"/>
+    <xsl:variable name="padd" select="substring($spacje, 1, $padding)"/>
     <xsl:value-of select="concat($element, $padd)"/>
 </xsl:template>
 
@@ -34,7 +40,10 @@
   <xsl:call-template name="pad">
     <xsl:with-param name="element" select="./pociąg"/>
   </xsl:call-template>
-
+  <xsl:call-template name="pad">
+    <xsl:with-param name="element" select="./przewoźnik"/>
+  </xsl:call-template>
+  <xsl:value-of select="$newline"/>
 </xsl:for-each>
 
 

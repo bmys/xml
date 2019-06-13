@@ -186,3 +186,22 @@
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+
+
+
+
+
+
+
+
+  <xsl:template name="pad">
+    <xsl:param name="element" />
+      <xsl:variable name="padding" select="50-string-length($element)"/>
+      <xsl:variable name="padd" select="substring($spacje, $padding)"/>
+  <!--    <xsl:value-of select="concat($element, $padd)"/>-->
+        <xsl:value-of select="$padding"/>
+        _
+        <xsl:value-of select="padd"/>
+
+  </xsl:template>
