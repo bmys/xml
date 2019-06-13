@@ -32,8 +32,47 @@
 
 <xsl:template match="/">
 <!--      <xsl:value-of select="$spacje"/>-->
+  <xsl:call-template name="pad">
+    <xsl:with-param name="element" select="'Pociąg'"/>
+  </xsl:call-template>
 
-<xsl:for-each select="./pkp:rozkład/połączenia/przyjazdy/połączenie">
+  <xsl:call-template name="pad">
+    <xsl:with-param name="element" select="'Przewoźnik'"/>
+  </xsl:call-template>
+
+  <xsl:call-template name="pad">
+    <xsl:with-param name="element" select="'Stacja wyjazdu'"/>
+  </xsl:call-template>
+
+  <xsl:call-template name="pad">
+    <xsl:with-param name="element" select="'Godzina wyjazdu'"/>
+  </xsl:call-template>
+
+  <xsl:call-template name="pad">
+    <xsl:with-param name="element" select="'Stacja przyjazdu'"/>
+  </xsl:call-template>
+
+  <xsl:call-template name="pad">
+    <xsl:with-param name="element" select="'Godzina przyjazdu'"/>
+  </xsl:call-template>
+
+  <xsl:call-template name="pad">
+    <xsl:with-param name="element" select="'Dystans'"/>
+  </xsl:call-template>
+
+  <xsl:call-template name="pad">
+    <xsl:with-param name="element" select="'Stacje'"/>
+  </xsl:call-template>
+
+  <xsl:call-template name="pad">
+    <xsl:with-param name="element" select="'Ceny'"/>
+  </xsl:call-template>
+
+
+  <xsl:value-of select="$newline"/>
+
+
+  <xsl:for-each select="./pkp:rozkład/połączenia/przyjazdy/połączenie">
 <!--  <xsl:variable name="padding" select="50-string-length(pociąg)"/>-->
 <!--  <xsl:variable name="padd" select="substring($spacje, $padding)"/>-->
 <!--  <xsl:value-of select="concat(pociąg, $padd)"/>-->
@@ -61,6 +100,10 @@
     <xsl:with-param name="element" select="pkp:przyjazd/pkp:godzina"/>
   </xsl:call-template>
 
+  <xsl:call-template name="pad">
+    <xsl:with-param name="element" select="informacje/pkp:dystans"/>
+  </xsl:call-template>
+
   <xsl:variable name="stacyjki">
     <xsl:for-each select="pkp:stacje/pkp:stacja">
       <xsl:value-of select="." />
@@ -72,6 +115,18 @@
     <xsl:with-param name="element" select="$stacyjki"/>
   </xsl:call-template>
 
+  <xsl:variable name="ceny">
+    <xsl:for-each select="informacje/pkp:cena">
+      <xsl:value-of select="@typ"/>
+      <xsl:value-of select="' '" />
+      <xsl:value-of select="." />
+      <xsl:value-of select="'zł '" />
+    </xsl:for-each>
+  </xsl:variable>
+
+  <xsl:call-template name="pad">
+    <xsl:with-param name="element" select="$ceny"/>
+  </xsl:call-template>
 
   <xsl:value-of select="$newline"/>
 </xsl:for-each>
