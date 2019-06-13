@@ -4,7 +4,6 @@
   xmlns:pkp="www.pkp.pl"
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   version="3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xmlns:fn="http://www.w3.org/2005/xpath-functions"
   xsi:schemaLocation="http://www.w3.org/2005/xpath-functions ">
   <xsl:output method="text" indent="no" encoding="utf-8"/>
 
@@ -17,9 +16,16 @@
 <xsl:template match="/">
 <!--      <xsl:value-of select="$spacje"/>-->
 
-<xsl:variable name="padding" select="50-string-length(./pkp:rozkład/pkp:nagłówek/pkp:tytuł)"/>
-<xsl:variable name="padd" select="substring($spacje, $padding)"/>
-<xsl:value-of select="concat(./pkp:rozkład/pkp:nagłówek/pkp:tytuł, $padd)"/>
+<xsl:for-each select="./pkp:rozkład/połączenia/przyjazdy/połączenie">
+
+  <xsl:variable name="padding" select="50-string-length(pociąg)"/>
+  <xsl:variable name="padd" select="substring($spacje, $padding)"/>
+  <xsl:value-of select="concat(pociąg, $padd)"/>
+
+
+</xsl:for-each>
+
+
 
 <!--      <xsl:value-of select="$padding"/>-->
 
