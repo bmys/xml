@@ -3,13 +3,17 @@
 <xsl:stylesheet
   xmlns:pkp="www.pkp.pl"
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-  version="3.0">
+  version="3.0"
+  exclude-result-prefixes="pkp">
 
-  <xsl:output omit-xml-declaration="yes" method="html" indent="yes" encoding="utf-8"/>
+  <xsl:output omit-xml-declaration="yes" method="html" indent="yes" encoding="utf-8"
+    doctype-public="-//W3C//DTD XHTML 1.1//EN"
+    doctype-system= "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"/>
 
   <xsl:key name="prze" match="pkp:przewoźnik" use="@id"/>
 
   <xsl:template match="/">
+
     <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
       <head>
         <title>
