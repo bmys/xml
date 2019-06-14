@@ -194,6 +194,186 @@
           <cena typ="pracownik" >9.47</cena>
         </informacje>
       </połączenie>
+
+      <połączenie idref="TLK">
+        <pociąg>T1</pociąg>
+        <wyjazd>
+          <stacja>Katowice</stacja>
+          <godzina>11:45:00</godzina>
+        </wyjazd>
+        <przyjazd>
+          <stacja>Pabianice</stacja>
+          <godzina>12:00:00</godzina>
+        </przyjazd>
+        <stacje>
+          <stacja>Katowice</stacja>
+          <stacja>Pabianice</stacja>
+        </stacje>
+        <informacje>
+          <dystans>90km</dystans>
+          <cena typ="student">14.05</cena>
+        </informacje>
+      </połączenie>
+
+      <połączenie idref="TLK">
+        <pociąg>T1</pociąg>
+        <wyjazd>
+          <stacja>Katowice</stacja>
+          <godzina>14:45:00</godzina>
+        </wyjazd>
+        <przyjazd>
+          <stacja>Pabianice</stacja>
+          <godzina>16:00:00</godzina>
+        </przyjazd>
+        <stacje>
+          <stacja>Pabianice</stacja>
+          <stacja>Katowice</stacja>
+        </stacje>
+        <informacje>
+          <dystans>90km</dystans>
+          <cena typ="pracownik">12.05</cena>
+        </informacje>
+      </połączenie>
+
+      <połączenie idref="TLK">
+        <pociąg>T2</pociąg>
+        <wyjazd>
+          <stacja>Katowice</stacja>
+          <godzina>15:45:00</godzina>
+        </wyjazd>
+        <przyjazd>
+          <stacja>Pabianice</stacja>
+          <godzina>16:00:00</godzina>
+        </przyjazd>
+        <stacje>
+          <stacja>Pabianice</stacja>
+          <stacja>Katowice</stacja>
+        </stacje>
+        <informacje>
+          <dystans>90km</dystans>
+          <cena typ="pracownik">13.05</cena>
+        </informacje>
+      </połączenie>
+
+      <połączenie idref="EIP">
+        <pociąg>A5</pociąg>
+        <wyjazd>
+          <stacja>Katowice</stacja>
+          <godzina>15:45:00</godzina>
+        </wyjazd>
+        <przyjazd>
+          <stacja>Pabianice</stacja>
+          <godzina>16:00:00</godzina>
+        </przyjazd>
+        <stacje>
+          <stacja>Katowice</stacja>
+          <stacja>Pabianice</stacja>
+        </stacje>
+        <informacje>
+          <dystans>90km</dystans>
+          <cena typ="pracownik">18.05</cena>
+        </informacje>
+      </połączenie>
+
+      <połączenie idref="EIP">
+        <pociąg>A5</pociąg>
+        <wyjazd>
+          <stacja>Warszawa</stacja>
+          <godzina>15:45:00</godzina>
+        </wyjazd>
+        <przyjazd>
+          <stacja>Pabianice</stacja>
+          <godzina>16:00:00</godzina>
+        </przyjazd>
+        <stacje>
+          <stacja>Warszawa</stacja>
+          <stacja>Pabianice</stacja>
+        </stacje>
+        <informacje>
+          <dystans>190km</dystans>
+          <cena typ="pracownik">18.05</cena>
+        </informacje>
+      </połączenie>
+
+      <połączenie idref="EIP">
+        <pociąg>A6</pociąg>
+        <wyjazd>
+          <stacja>Katowice</stacja>
+          <godzina>15:45:00</godzina>
+        </wyjazd>
+        <przyjazd>
+          <stacja>Pabianice</stacja>
+          <godzina>16:00:00</godzina>
+        </przyjazd>
+        <stacje>
+          <stacja>Katowice</stacja>
+          <stacja>Pabianice</stacja>
+        </stacje>
+        <informacje>
+          <dystans>90km</dystans>
+          <cena typ="pracownik">18.05</cena>
+        </informacje>
+      </połączenie>
+
+      <połączenie idref="EIP">
+        <pociąg>A7</pociąg>
+        <wyjazd>
+          <stacja>Warszawa</stacja>
+          <godzina>15:45:00</godzina>
+        </wyjazd>
+        <przyjazd>
+          <stacja>Pabianice</stacja>
+          <godzina>16:00:00</godzina>
+        </przyjazd>
+        <stacje>
+          <stacja>Warszawa</stacja>
+          <stacja>Pabianice</stacja>
+        </stacje>
+        <informacje>
+          <dystans>190km</dystans>
+          <cena typ="pracownik">18.05</cena>
+        </informacje>
+      </połączenie>
+
+      <połączenie idref="EIP">
+        <pociąg>A9</pociąg>
+        <wyjazd>
+          <stacja>Katowice</stacja>
+          <godzina>15:45:00</godzina>
+        </wyjazd>
+        <przyjazd>
+          <stacja>Pabianice</stacja>
+          <godzina>16:00:00</godzina>
+        </przyjazd>
+        <stacje>
+          <stacja>Katowice</stacja>
+          <stacja>Pabianice</stacja>
+        </stacje>
+        <informacje>
+          <dystans>90km</dystans>
+          <cena typ="pracownik">28.05</cena>
+        </informacje>
+      </połączenie>
+
+      <połączenie idref="EIP">
+        <pociąg>A8</pociąg>
+        <wyjazd>
+          <stacja>Warszawa</stacja>
+          <godzina>15:45:00</godzina>
+        </wyjazd>
+        <przyjazd>
+          <stacja>Pabianice</stacja>
+          <godzina>16:00:00</godzina>
+        </przyjazd>
+        <stacje>
+          <stacja>Warszawa</stacja>
+          <stacja>Pabianice</stacja>
+        </stacje>
+        <informacje>
+          <dystans>190km</dystans>
+          <cena typ="pracownik">18.05</cena>
+        </informacje>
+      </połączenie>
     </przyjazdy>
 
   </połączenia>
