@@ -2,12 +2,10 @@
 
 <xsl:stylesheet
   xmlns:pkp="www.pkp.pl"
-  xmlns:xs="http://www.w3.org/2001/XMLSchema"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   version="3.0">
 
-  <xsl:output method="html" indent="yes" encoding="utf-8"/>
+  <xsl:output omit-xml-declaration="yes" method="html" indent="yes" encoding="utf-8"/>
 
   <xsl:key name="prze" match="pkp:przewoźnik" use="@id"/>
 
@@ -22,7 +20,7 @@
       <body style="margin: 0">
         <div style="width: 100vw">
           <h2>Rozkład jazdy</h2>
-        <table border="1">
+        <table>
           <tr>
             <th>Numer</th>
             <th>Przewoźnik</th>
@@ -71,9 +69,9 @@
           </xsl:for-each>
         </table>
         </div>
-        <div style="width: 100vw; margin-top: 50px">
+        <div style="width: 100vw; margin-top: 50px; border: 1px solid black;">
           <h2>Podsumowanie</h2>
-          <table border="1" style="width: 100vw">
+          <table style="width: 100vw">
             <tr>
               <th>Data utworzenia</th>
               <th>Suma cen</th>

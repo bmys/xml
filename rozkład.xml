@@ -70,6 +70,26 @@
       <połączenie idref="IC">
         <pociąg>Stefan</pociąg>
         <wyjazd>
+          <stacja>Piotrków</stacja>
+          <godzina>11:35:00</godzina>
+        </wyjazd>
+        <przyjazd>
+          <stacja>Łódź</stacja>
+          <godzina>12:35:00</godzina>
+        </przyjazd>
+        <stacje>
+          <stacja>Piotrków</stacja>
+          <stacja>Łódź</stacja>
+        </stacje>
+        <informacje>
+          <dystans>53km</dystans>
+          <cena typ="student" promocja="true">11.02</cena>
+        </informacje>
+      </połączenie>
+
+      <połączenie idref="IC">
+        <pociąg>Stefan</pociąg>
+        <wyjazd>
           <stacja>Pabianice</stacja>
           <godzina>11:35:00</godzina>
         </wyjazd>
@@ -372,6 +392,68 @@
         <informacje>
           <dystans>190km</dystans>
           <cena typ="pracownik">18.05</cena>
+        </informacje>
+      </połączenie>
+
+      <połączenie idref="IC">
+        <pociąg>Grzegorz</pociąg>
+        <wyjazd>
+          <stacja>Katowice</stacja>
+          <godzina>11:35:00</godzina>
+        </wyjazd>
+        <przyjazd>
+          <stacja>Łódź</stacja>
+          <godzina>12:35:00</godzina>
+        </przyjazd>
+        <stacje>
+          <stacja>Piotrków</stacja>
+          <stacja>Łódź</stacja>
+        </stacje>
+        <informacje>
+          <dystans>53km</dystans>
+          <cena typ="student" promocja="true">14.02</cena>
+        </informacje>
+      </połączenie>
+
+      <połączenie idref="IC">
+        <pociąg>Grzegorz</pociąg>
+        <wyjazd>
+          <stacja>Łódź</stacja>
+          <godzina>11:35:00</godzina>
+        </wyjazd>
+        <przyjazd>
+          <stacja>Piotrków</stacja>
+          <godzina>12:35:00</godzina>
+        </przyjazd>
+        <stacje>
+          <stacja>Łódź</stacja>
+          <stacja>Piotrków</stacja>
+          <stacja>Katowice</stacja>
+        </stacje>
+        <informacje>
+          <dystans>53km</dystans>
+          <cena typ="student" promocja="true">14.02</cena>
+        </informacje>
+      </połączenie>
+
+      <połączenie idref="TLK">
+        <pociąg>Krystyna</pociąg>
+        <wyjazd>
+          <stacja>Łódź</stacja>
+          <godzina>19:35:00</godzina>
+        </wyjazd>
+        <przyjazd>
+          <stacja>Piotrków</stacja>
+          <godzina>22:35:00</godzina>
+        </przyjazd>
+        <stacje>
+          <stacja>Łódź</stacja>
+          <stacja>Piotrków</stacja>
+          <stacja>Katowice</stacja>
+        </stacje>
+        <informacje>
+          <dystans>53km</dystans>
+          <cena typ="student" promocja="true">24.02</cena>
         </informacje>
       </połączenie>
     </przyjazdy>
