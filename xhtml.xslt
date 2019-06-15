@@ -6,7 +6,7 @@
   version="2.0"
   exclude-result-prefixes="pkp">
 
-  <xsl:output omit-xml-declaration="yes" method="html" indent="yes" encoding="utf-8"
+  <xsl:output omit-xml-declaration="yes" method="xml" indent="yes" encoding="utf-8"
     doctype-public="-//W3C//DTD XHTML 1.1//EN"
     doctype-system= "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"/>
 

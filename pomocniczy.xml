@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="UTF-8"?><pkp:rozkład xmlns:pkp="www.pkp.pl" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:date="http://exslt.org/dates-and-times" xmlns:math="http://exslt.org/math" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<nagłówek xmlns="www.pkp.pl">
+    <tytuł>
+      Rozkład jazdy PKP
+    </tytuł>
+    <autorzy>
+      <autor>
+        <imie>Bartosz</imie>
+        <nazwisko>Myśliwiec</nazwisko>
+        <nr_indeksu>211827</nr_indeksu>
+      </autor>
+      <autor>
+        <imie>Autor</imie>
+        <nazwisko>z emailem</nazwisko>
+        <email>211827@edu.p.lodz.pl</email>
+      </autor>
+    </autorzy>
+
+    <data_modyfikacji>
+      2019-04-26
+    </data_modyfikacji>
+
+    <credits>
+      <credit>
+        <nazwa>Ikony połączeń</nazwa>
+        <źródło>www.rozklad-pkp.pl</źródło>
+      </credit>
+
+      <credit>
+        <nazwa>Logo pociąg</nazwa>
+        <źródło>www.rozklad-pkp.pl</źródło>
+      </credit>
+    </credits>
+
+
+  </nagłówek>
+<połączenia>
+<przewoźnicy>
+<przewoźnik id="EIP"/>
+<przewoźnik id="IC"/>
+<przewoźnik id="REG"/>
+<przewoźnik id="TLK"/>
+</przewoźnicy>
+<przyjazdy>
+<połączenie>
+<przewoźnik przewoźnik="TLK">Twoje Linie Kolejowe</przewoźnik>
+<pociąg>Maglev</pociąg>
+<wyjazd xmlns="www.pkp.pl">
+          <stacja>Łódź</stacja>
+          <godzina>14:15:00</godzina>
+        </wyjazd>
+<przyjazd xmlns="www.pkp.pl" opóźnienie="00:15:00">
+          <stacja>Warszawa</stacja>
+          <opóźnienie>14:35:00</opóźnienie>
+          <godzina>14:20:00</godzina>
+        </przyjazd>
+<stacje xmlns="www.pkp.pl">
+          <stacja>Łódź</stacja>
+          <stacja>Warszawa</stacja>
+        </stacje>
+<informacje>
+<najtańsze>3.47</najtańsze>
+<suma-cen>8.94</suma-cen>
+<dystans xmlns="www.pkp.pl">73km</dystans>
+<cena xmlns="www.pkp.pl" typ="emeryt">3.47</cena>
+<cena xmlns="www.pkp.pl" typ="pracownik">5.47</cena>
+</informacje>
+</połączenie>
+<połączenie>
+<przewoźnik przewoźnik="TLK">Twoje Linie Kolejowe</przewoźnik>
+<pociąg>Maglev</pociąg>
+<wyjazd xmlns="www.pkp.pl">
+          <stacja>Warszawa</stacja>
+          <godzina>13:10:00</godzina>
+        </wyjazd>
+<przyjazd xmlns="www.pkp.pl" opóźnienie="00:15:00">
+          <stacja>Łódź</stacja>
+          <opóźnienie>14:35:00</opóźnienie>
+          <godzina>14:20:00</godzina>
+        </przyjazd>
+<stacje xmlns="www.pkp.pl">
+          <stacja>Warszawa</stacja>
+          <stacja>Łódź</stacja>
+        </stacje>
+<informacje>
+<najtańsze>7.47</najtańsze>
+<suma-cen>16.94</suma-cen>
+<dystans xmlns="www.pkp.pl">713km</dystans>
+<cena xmlns="www.pkp.pl" typ="emeryt">7.47</cena>
+<cena xmlns="www.pkp.pl" typ="pracownik">9.47</cena>
+</informacje>
+</połączenie>
+<połączenie>
+<przewoźnik przewoźnik="TLK">Twoje Linie Kolejowe</przewoźnik>
+<pociąg>T1</pociąg>
+<wyjazd xmlns="www.pkp.pl">
+          <stacja>Katowice</stacja>
+          <godzina>11:45:00</godzina>
+        </wyjazd>
+<przyjazd xmlns="www.pkp.pl">
+          <stacja>Pabianice</stacja>
+          <godzina>12:00:00</godzina>
+        </przyjazd>
+<stacje xmlns="www.pkp.pl">
+          <stacja>Katowice</stacja>
+          <stacja>Pabianice</stacja>
+        </stacje>
+<informacje>
+<najtańsze>14.05</najtańsze>
+<suma-cen>14.05</suma-cen>
+<dystans xmlns="www.pkp.pl">90km</dystans>
+<cena xmlns="www.pkp.pl" typ="student">14.05</cena>
+</informacje>
+</połączenie>
+<połączenie>
+<przewoźnik przewoźnik="TLK">Twoje Linie Kolejowe</przewoźnik>
+<pociąg>T1</pociąg>
+<wyjazd xmlns="www.pkp.pl">
+          <stacja>Katowice</stacja>
+          <godzina>14:45:00</godzina>
+        </wyjazd>
+<przyjazd xmlns="www.pkp.pl">
+          <stacja>Pabianice</stacja>
+          <godzina>16:00:00</godzina>
+        </przyjazd>
+<stacje xmlns="www.pkp.pl">
+          <stacja>Pabianice</stacja>
+          <stacja>Katowice</stacja>
+        </stacje>
+<informacje>
+<najtańsze>12.05</najtańsze>
+<suma-cen>12.05</suma-cen>
+<dystans xmlns="www.pkp.pl">90km</dystans>
+<cena xmlns="www.pkp.pl" typ="pracownik">12.05</cena>
+</informacje>
+</połączenie>
+<połączenie>
+<przewoźnik przewoźnik="TLK">Twoje Linie Kolejowe</przewoźnik>
+<pociąg>T2</pociąg>
+<wyjazd xmlns="www.pkp.pl">
+          <stacja>Katowice</stacja>
+          <godzina>15:45:00</godzina>
+        </wyjazd>
+<przyjazd xmlns="www.pkp.pl">
+          <stacja>Pabianice</stacja>
+          <godzina>16:00:00</godzina>
+        </przyjazd>
+<stacje xmlns="www.pkp.pl">
+          <stacja>Pabianice</stacja>
+          <stacja>Katowice</stacja>
+        </stacje>
+<informacje>
+<najtańsze>13.05</najtańsze>
+<suma-cen>13.05</suma-cen>
+<dystans xmlns="www.pkp.pl">90km</dystans>
+<cena xmlns="www.pkp.pl" typ="pracownik">13.05</cena>
+</informacje>
+</połączenie>
+<połączenie>
+<przewoźnik przewoźnik="TLK">Twoje Linie Kolejowe</przewoźnik>
+<pociąg>Krystyna</pociąg>
+<wyjazd xmlns="www.pkp.pl">
+          <stacja>Łódź</stacja>
+          <godzina>19:35:00</godzina>
+        </wyjazd>
+<przyjazd xmlns="www.pkp.pl">
+          <stacja>Piotrków</stacja>
+          <godzina>22:35:00</godzina>
+        </przyjazd>
+<stacje xmlns="www.pkp.pl">
+          <stacja>Łódź</stacja>
+          <stacja>Piotrków</stacja>
+          <stacja>Katowice</stacja>
+        </stacje>
+<informacje>
+<najtańsze>24.02</najtańsze>
+<suma-cen>24.02</suma-cen>
+<dystans xmlns="www.pkp.pl">53km</dystans>
+<cena xmlns="www.pkp.pl" typ="student" promocja="true">24.02</cena>
+</informacje>
+</połączenie>
+<połączenie>
+<przewoźnik przewoźnik="REG">POLREGIO</przewoźnik>
+<pociąg>Maria</pociąg>
+<wyjazd xmlns="www.pkp.pl">
+          <stacja>Piotrków</stacja>
+          <godzina>10:35:00</godzina>
+        </wyjazd>
+<przyjazd xmlns="www.pkp.pl">
+          <stacja>Łódź</stacja>
+          <godzina>12:35:00</godzina>
+        </przyjazd>
+<stacje xmlns="www.pkp.pl">
+          <stacja>Piotrków</stacja>
+          <stacja>Łódź</stacja>
+        </stacje>
+<informacje>
+<najtańsze>15.07</najtańsze>
+<suma-cen>15.07</suma-cen>
+<dystans xmlns="www.pkp.pl">13km</dystans>
+<cena xmlns="www.pkp.pl" typ="student" promocja="true">15.07</cena>
+</informacje>
+</połączenie>
+<połączenie>
+<przewoźnik przewoźnik="REG">POLREGIO</przewoźnik>
+<pociąg>Krzysztof</pociąg>
+<wyjazd xmlns="www.pkp.pl">
+          <stacja>Łódź</stacja>
+          <godzina>08:45:00</godzina>
+        </wyjazd>
+<przyjazd xmlns="www.pkp.pl">
+          <stacja>Pabianice</stacja>
+          <godzina>11:35:00</godzina>
+        </przyjazd>
+<stacje xmlns="www.pkp.pl">
+          <stacja>Łódź</stacja>
+          <stacja>Pabianice</stacja>
+        </stacje>
+<informacje>
+<najtańsze>4.05</najtańsze>
+<suma-cen>4.05</suma-cen>
+<dystans xmlns="www.pkp.pl">10km</dystans>
+<cena xmlns="www.pkp.pl" typ="student" promocja="true">4.05</cena>
+</informacje>
+</połączenie>
+<połączenie>
+<przewoźnik przewoźnik="REG">POLREGIO</przewoźnik>
+<pociąg>TGV</pociąg>
+<wyjazd xmlns="www.pkp.pl">
+          <stacja>Warszawa</stacja>
+          <godzina>08:35:00</godzina>
+        </wyjazd>
+<przyjazd xmlns="www.pkp.pl" opóźnienie="00:25:00">
+          <stacja>Łódź</stacja>
+          <opóźnienie>14:35:00</opóźnienie>
+          <godzina>09:35:00</godzina>
+        </przyjazd>
+<stacje xmlns="www.pkp.pl">
+          <stacja>Warszawa</stacja>
+          <stacja>Łódź</stacja>
+        </stacje>
+<informacje>
+<najtańsze>12.07</najtańsze>
+<suma-cen>12.07</suma-cen>
+<dystans xmlns="www.pkp.pl">130km</dystans>
+<cena xmlns="www.pkp.pl" typ="student">12.07</cena>
+</informacje>
+</połączenie>
+<połączenie>
+<przewoźnik przewoźnik="IC">InterCity</przewoźnik>
+<pociąg>Stefan</pociąg>
+<wyjazd xmlns="www.pkp.pl">
+          <stacja>Piotrków</stacja>
+          <godzina>11:35:00</godzina>
+        </wyjazd>
+<przyjazd xmlns="www.pkp.pl">
+          <stacja>Łódź</stacja>
+          <godzina>12:35:00</godzina>
+        </przyjazd>
+<stacje xmlns="www.pkp.pl">
+          <stacja>Piotrków</stacja>
+          <stacja>Łódź</stacja>
+        </stacje>
+<informacje>
+<najtańsze>11.02</najtańsze>
+<suma-cen>11.02</suma-cen>
+<dystans xmlns="www.pkp.pl">53km</dystans>
+<cena xmlns="www.pkp.pl" typ="student" promocja="true">11.02</cena>
+</informacje>
+</połączenie>
+<połączenie>
+<przewoźnik przewoźnik="IC">InterCity</przewoźnik>
+<pociąg>Stefan</pociąg>
+<wyjazd xmlns="www.pkp.pl">
+          <stacja>Pabianice</stacja>
+          <godzina>11:35:00</godzina>
+        </wyjazd>
+<przyjazd xmlns="www.pkp.pl">
+          <stacja>Piotrków</stacja>
+          <godzina>14:35:00</godzina>
+        </przyjazd>
+<stacje xmlns="www.pkp.pl">
+          <stacja>Pabianice</stacja>
+          <stacja>Piotrków</stacja>
+        </stacje>
+<informacje>
+<najtańsze>10.47</najtańsze>
+<suma-cen>22.94</suma-cen>
+<dystans xmlns="www.pkp.pl">53km</dystans>
+<cena xmlns="www.pkp.pl" typ="emeryt">10.47</cena>
+<cena xmlns="www.pkp.pl" typ="student">12.47</cena>
+</informacje>
+</połączenie>
+<połączenie>
+<przewoźnik przewoźnik="IC">InterCity</przewoźnik>
+<pociąg>Grzegorz</pociąg>
+<wyjazd xmlns="www.pkp.pl">
+          <stacja>Katowice</stacja>
+          <godzina>11:35:00</godzina>
+        </wyjazd>
+<przyjazd xmlns="www.pkp.pl">
+          <stacja>Łódź</stacja>
+          <godzina>12:35:00</godzina>
+        </przyjazd>
+<stacje xmlns="www.pkp.pl">
+          <stacja>Piotrków</stacja>
+          <stacja>Łódź</stacja>
+        </stacje>
+<informacje>
+<najtańsze>14.02</najtańsze>
+<suma-cen>14.02</suma-cen>
+<dystans xmlns="www.pkp.pl">53km</dystans>
+<cena xmlns="www.pkp.pl" typ="student" promocja="true">14.02</cena>
+</informacje>
+</połączenie>
+<połączenie>
+<przewoźnik przewoźnik="IC">InterCity</przewoźnik>
+<pociąg>Grzegorz</pociąg>
+<wyjazd xmlns="www.pkp.pl">
+          <stacja>Łódź</stacja>
+          <godzina>11:35:00</godzina>
+        </wyjazd>
+<przyjazd xmlns="www.pkp.pl">
+          <stacja>Piotrków</stacja>
+          <godzina>12:35:00</godzina>
+        </przyjazd>
+<stacje xmlns="www.pkp.pl">
+          <stacja>Łódź</stacja>
+          <stacja>Piotrków</stacja>
+          <stacja>Katowice</stacja>
+        </stacje>
+<informacje>
+<najtańsze>14.02</najtańsze>
+<suma-cen>14.02</suma-cen>
+<dystans xmlns="www.pkp.pl">53km</dystans>
+<cena xmlns="www.pkp.pl" typ="student" promocja="true">14.02</cena>
+</informacje>
+</połączenie>
+<połączenie>
+<przewoźnik przewoźnik="EIP">Express InterCity Premium</przewoźnik>
+<pociąg>Pendolino</pociąg>
+<wyjazd xmlns="www.pkp.pl">
+          <stacja>Koluszki</stacja>
+          <godzina>14:15:00</godzina>
+        </wyjazd>
+<przyjazd xmlns="www.pkp.pl">
+          <stacja>Warszawa</stacja>
+          <godzina>18:35:00</godzina>
+        </przyjazd>
+<stacje xmlns="www.pkp.pl">
+          <stacja>Koluszki</stacja>
+          <stacja>Warszawa</stacja>
+        </stacje>
+<informacje>
+<najtańsze>8.47</najtańsze>
+<suma-cen>24.939999999999998</suma-cen>
+<dystans xmlns="www.pkp.pl">153km</dystans>
+<cena xmlns="www.pkp.pl" typ="emeryt">8.47</cena>
+<cena xmlns="www.pkp.pl" typ="pracownik">16.47</cena>
+</informacje>
+</połączenie>
+<połączenie>
+<przewoźnik przewoźnik="EIP">Express InterCity Premium</przewoźnik>
+<pociąg>A5</pociąg>
+<wyjazd xmlns="www.pkp.pl">
+          <stacja>Katowice</stacja>
+          <godzina>15:45:00</godzina>
+        </wyjazd>
+<przyjazd xmlns="www.pkp.pl">
+          <stacja>Pabianice</stacja>
+          <godzina>16:00:00</godzina>
+        </przyjazd>
+<stacje xmlns="www.pkp.pl">
+          <stacja>Katowice</stacja>
+          <stacja>Pabianice</stacja>
+        </stacje>
+<informacje>
+<najtańsze>18.05</najtańsze>
+<suma-cen>18.05</suma-cen>
+<dystans xmlns="www.pkp.pl">90km</dystans>
+<cena xmlns="www.pkp.pl" typ="pracownik">18.05</cena>
+</informacje>
+</połączenie>
+<połączenie>
+<przewoźnik przewoźnik="EIP">Express InterCity Premium</przewoźnik>
+<pociąg>A5</pociąg>
+<wyjazd xmlns="www.pkp.pl">
+          <stacja>Warszawa</stacja>
+          <godzina>15:45:00</godzina>
+        </wyjazd>
+<przyjazd xmlns="www.pkp.pl">
+          <stacja>Pabianice</stacja>
+          <godzina>16:00:00</godzina>
+        </przyjazd>
+<stacje xmlns="www.pkp.pl">
+          <stacja>Warszawa</stacja>
+          <stacja>Pabianice</stacja>
+        </stacje>
+<informacje>
+<najtańsze>18.05</najtańsze>
+<suma-cen>18.05</suma-cen>
+<dystans xmlns="www.pkp.pl">190km</dystans>
+<cena xmlns="www.pkp.pl" typ="pracownik">18.05</cena>
+</informacje>
+</połączenie>
+<połączenie>
+<przewoźnik przewoźnik="EIP">Express InterCity Premium</przewoźnik>
+<pociąg>A6</pociąg>
+<wyjazd xmlns="www.pkp.pl">
+          <stacja>Katowice</stacja>
+          <godzina>15:45:00</godzina>
+        </wyjazd>
+<przyjazd xmlns="www.pkp.pl">
+          <stacja>Pabianice</stacja>
+          <godzina>16:00:00</godzina>
+        </przyjazd>
+<stacje xmlns="www.pkp.pl">
+          <stacja>Katowice</stacja>
+          <stacja>Pabianice</stacja>
+        </stacje>
+<informacje>
+<najtańsze>18.05</najtańsze>
+<suma-cen>18.05</suma-cen>
+<dystans xmlns="www.pkp.pl">90km</dystans>
+<cena xmlns="www.pkp.pl" typ="pracownik">18.05</cena>
+</informacje>
+</połączenie>
+<połączenie>
+<przewoźnik przewoźnik="EIP">Express InterCity Premium</przewoźnik>
+<pociąg>A7</pociąg>
+<wyjazd xmlns="www.pkp.pl">
+          <stacja>Warszawa</stacja>
+          <godzina>15:45:00</godzina>
+        </wyjazd>
+<przyjazd xmlns="www.pkp.pl">
+          <stacja>Pabianice</stacja>
+          <godzina>16:00:00</godzina>
+        </przyjazd>
+<stacje xmlns="www.pkp.pl">
+          <stacja>Warszawa</stacja>
+          <stacja>Pabianice</stacja>
+        </stacje>
+<informacje>
+<najtańsze>18.05</najtańsze>
+<suma-cen>18.05</suma-cen>
+<dystans xmlns="www.pkp.pl">190km</dystans>
+<cena xmlns="www.pkp.pl" typ="pracownik">18.05</cena>
+</informacje>
+</połączenie>
+<połączenie>
+<przewoźnik przewoźnik="EIP">Express InterCity Premium</przewoźnik>
+<pociąg>A9</pociąg>
+<wyjazd xmlns="www.pkp.pl">
+          <stacja>Katowice</stacja>
+          <godzina>15:45:00</godzina>
+        </wyjazd>
+<przyjazd xmlns="www.pkp.pl">
+          <stacja>Pabianice</stacja>
+          <godzina>16:00:00</godzina>
+        </przyjazd>
+<stacje xmlns="www.pkp.pl">
+          <stacja>Katowice</stacja>
+          <stacja>Pabianice</stacja>
+        </stacje>
+<informacje>
+<najtańsze>28.05</najtańsze>
+<suma-cen>28.05</suma-cen>
+<dystans xmlns="www.pkp.pl">90km</dystans>
+<cena xmlns="www.pkp.pl" typ="pracownik">28.05</cena>
+</informacje>
+</połączenie>
+<połączenie>
+<przewoźnik przewoźnik="EIP">Express InterCity Premium</przewoźnik>
+<pociąg>A8</pociąg>
+<wyjazd xmlns="www.pkp.pl">
+          <stacja>Warszawa</stacja>
+          <godzina>15:45:00</godzina>
+        </wyjazd>
+<przyjazd xmlns="www.pkp.pl">
+          <stacja>Pabianice</stacja>
+          <godzina>16:00:00</godzina>
+        </przyjazd>
+<stacje xmlns="www.pkp.pl">
+          <stacja>Warszawa</stacja>
+          <stacja>Pabianice</stacja>
+        </stacje>
+<informacje>
+<najtańsze>18.05</najtańsze>
+<suma-cen>18.05</suma-cen>
+<dystans xmlns="www.pkp.pl">190km</dystans>
+<cena xmlns="www.pkp.pl" typ="pracownik">18.05</cena>
+</informacje>
+</połączenie>
+</przyjazdy>
+</połączenia>
+<podsumowanie>
+<data-utworzenia>2019-06-14+02:00</data-utworzenia>
+<suma-cen>325.48</suma-cen>
+<ilość-połączeń>20</ilość-połączeń>
+</podsumowanie>
+</pkp:rozkład>
